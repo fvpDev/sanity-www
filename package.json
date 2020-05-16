@@ -13,8 +13,12 @@
     "classnames": "2.2.6",
     "date-fns": "2.10.0",
     "next": "latest",
+    "next-optimized-images": "^2.6.0",
     "react": "^16.13.0",
-    "react-dom": "^16.13.0"
+    "react-dom": "^16.13.0",
+    "react-progressive-loader": "^0.4.1",
+    "react-waypoint": "^9.0.2",
+    "react-window": "^1.8.5"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.1.0",
