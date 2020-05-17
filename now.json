@@ -13,7 +13,7 @@
     {
       "src": "/.*",
       "headers": { "X-Content-Type-Options": "nosniff" },
-      "continue": "true"
+      "continue": true
     }
   ]
 }
