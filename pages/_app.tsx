@@ -18,6 +18,6 @@ export default withSecureHeaders({
   forceHTTPSRedirect: [true, { maxAge: 60 * 60 * 24 * 4, includeSubDomains: true }],
   // frameGuard: "deny", // default
   // nosniff: "nosniff", // default
-  // xssProtection: "sanitize", // default
+  xssProtection: "sanitize", // default
   referrerPolicy: "same-origin",
 })(MyApp);
