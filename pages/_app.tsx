@@ -1,7 +1,8 @@
 import '../styles/index.css'
+import { AppProps } from 'next/app'
 import withSecureHeaders from "next-secure-headers";
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />
 }
 
@@ -9,7 +10,9 @@ export default withSecureHeaders({
   contentSecurityPolicy: {
     directives: {
       defaultSrc: "'self'",
-      styleSrc: ["'self'", "https://cdn.sanity.io"],
+      imgSrc: ["'self'", "https://cdn.sanity.io"],
+      scriptSrc: ["'self'", "'unsafe-eval'"],
+      styleSrc: ["'self'", "'unsafe-inline'"],
     },
   },
   forceHTTPSRedirect: [true, { maxAge: 60 * 60 * 24 * 4, includeSubDomains: true }],
