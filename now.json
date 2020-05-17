@@ -8,5 +8,19 @@
     "env": {
       "NEXT_EXAMPLE_CMS_SANITY_PROJECT_ID": "@next_example_cms_sanity_project_id"
     }
-  }
+  },
+  "routes": [
+    {
+      "src": "/.*",
+      "headers": {
+        "Content-Security-Policy": "default-src 'self'; img-src 'self' https://cdn.sanity.io; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline'",
+        "Feature-Policy": "'none'",
+        "Referrer-Policy": "same-origin",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "deny",
+        "X-XSS-Protection": "1"
+      },
+      "continue": true
+    }
+  ]
 }
