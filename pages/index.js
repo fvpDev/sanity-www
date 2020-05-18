@@ -18,6 +18,7 @@ export default function Index({ allPosts, preview }) {
         </Head>
         <Container>
           <Intro />
+          <img src="/tc-flower.png" />
           {heroPost && (
             <HeroPost
               title={heroPost.title}
