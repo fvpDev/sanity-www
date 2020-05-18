@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.thundariuscreative.com/pages/index</loc>
+    <lastmod>Sun May 17 2020 22:58:05 GMT-0400 (Eastern Daylight Time)</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://www.thundariuscreative.com/pages/posts/[slug]</loc>
+    <lastmod>Sat May 16 2020 09:04:18 GMT-0400 (Eastern Daylight Time)</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.00</priority>
+  </url>
+</urlset>
