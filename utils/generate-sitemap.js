@@ -27,7 +27,7 @@ const prettier = require('prettier');
           // Get lastModified
           const fullPath = path.join(__dirname + "/../", page)
           const fileStats = fs.statSync(fullPath)
-          const lastModified = fileStats.mtime
+          const lastModified = fileStats.mtime.toISOString().split('T')[0]
 
           return `
             <url>
