@@ -32,4 +32,3 @@ yarn-error.log*
 
 .now
 package-lock.json
-vercel.json
