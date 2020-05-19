@@ -29,4 +29,13 @@ module.exports = {
       },
     },
   },
+  variants: {},
+  plugins: [],
+  purge: {
+    enabled: true,
+    content: [
+      './pages/**/*.{js,jsx,ts,tsx,mdx}',
+      './components/**/*.{js,jsx,ts,tsx,mdx}',
+    ],
+  }
 }
