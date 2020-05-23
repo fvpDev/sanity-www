@@ -10,6 +10,9 @@ module.exports = withPWA({
       process.env.NEXT_EXAMPLE_CMS_SANITY_PROJECT_ID,
   },
   pwa: {
+    disable: true,
+    register: true,
+    scope: '/app',
     dest: 'public'
   },
   webpack: (config, { isServer }) => { // Generate Sitemap + RSS on build time
