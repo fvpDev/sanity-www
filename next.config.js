@@ -1,8 +1,8 @@
 require('dotenv').config()
-const withOptimizedImages = require('next-optimized-images')
-const withPWA = require('next-pwa')
+// const withOptimizedImages = require('next-optimized-images')
+// const withPWA = require('next-pwa')
 
-module.exports = withPWA({
+module.exports = {
   optimizeImages: false,
   optimizeImagesInDev: false,
   env: {
@@ -15,12 +15,39 @@ module.exports = withPWA({
     scope: '/',
     dest: 'public'
   },
-  webpack: (config, { isServer }) => { // Generate Sitemap + RSS on build time
+  webpack: (config, { isServer }) => { // Generate Sitemap + Robots + RSS on build time
     if (isServer) {
       require('./utils/generate-sitemap')
       require('./utils/generate-robots')
       // require('./utils/generate-rss')
+      console.log(config)
+    }
+    return config
+  }
+}
+
+/*
+withPWA({
+  optimizeImages: false,
+  optimizeImagesInDev: false,
+  env: {
+    NEXT_EXAMPLE_CMS_SANITY_PROJECT_ID:
+      process.env.NEXT_EXAMPLE_CMS_SANITY_PROJECT_ID,
+  },
+  pwa: {
+    disable: false,
+    register: true,
+    scope: '/',
+    dest: 'public'
+  },
+  webpack: (config, { isServer }) => { // Generate Sitemap + Robots + RSS on build time
+    if (isServer) {
+      require('./utils/generate-sitemap')
+      require('./utils/generate-robots')
+      // require('./utils/generate-rss')
+      console.log(config)
     }
     return config
   }
 })
+*/
