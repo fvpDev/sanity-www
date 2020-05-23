@@ -6,7 +6,7 @@ export default function SEOMeta() {
     <Head>
       <meta charSet='utf-8' />
       <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
-      <meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1' />
+      <meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=2' />
       <meta
         name="description"
         content={`A statically generated blog example using Next.js and ${CMS_NAME}.`}
