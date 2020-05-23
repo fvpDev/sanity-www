@@ -26,7 +26,9 @@ export default function PWAMeta() {
       // Tap highlighting
       <meta name="msapplication-tap-highlight" content="no" />
 
-      <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#000000" />
+      <link rel="manifest" href="/site.webmanifest" />
+      <link rel="shortcut icon" href="/favicon/favicon.ico" />
+      <link rel="mask-icon" href="/favicon/favicon.svg" color="#000000" />
       <link rel="apple-touch-icon" href="/favicon/57.png" sizes="57x57" />
       <link rel="apple-touch-icon" href="/favicon/60.png" sizes="60x60" />
       <link rel="apple-touch-icon" href="/favicon/72.png" sizes="72x72" />
@@ -40,8 +42,6 @@ export default function PWAMeta() {
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon/32.png" />
       <link rel="icon" type="image/png" sizes="96x96" href="/favicon/96.png" />
       <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/192.png" />
-      <link rel="shortcut icon" href="/favicon/favicon.ico" />
-      <link rel="manifest" href="/site.webmanifest" />
     </Head>
   )
 }
