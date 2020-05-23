@@ -2,7 +2,8 @@ import React from 'react'
 import Fonts from '../load/fonts'
 import Alert from '../components/alert'
 import Footer from '../components/footer'
-import Meta from '../components/meta'
+import SEOMeta from '../components/meta/seo'
+import PWAMeta from '../components/meta/pwa'
 
 export default class Layout extends React.Component {
   componentDidMount () { Fonts() }
@@ -10,7 +11,8 @@ export default class Layout extends React.Component {
     const { preview, children } = this.props;
     return (
       <>
-        <Meta />
+        <SEOMeta />
+        <PWAMeta />
         <div className="min-h-screen">
           <Alert preview={preview} />
           <main>{children}</main>
