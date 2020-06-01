@@ -3,13 +3,13 @@ import ErrorPage from 'next/error'
 import { useRouter } from 'next/router'
 
 import Layout from '../../components/layout'
-import Header from '../../components/_layout/header'
 import Container from '../../components/_layout/container'
 import Separator from '../../components/_layout/separator'
 import Posts from '../../components/pages/posts/posts'
 import PostTitle from '../../components/pages/posts/_post/post-title'
 import PostBody from '../../components/pages/posts/[post]/post-body'
 import PostHeader from '../../components/pages/posts/[post]/post-header'
+import BlogHeader from '../../components/pages/posts/[post]/blog-header'
 
 import { CMS_NAME } from '../../lib/constants'
 import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api'
@@ -22,7 +22,7 @@ export default function Post({ post, morePosts, preview }) {
   return (
     <Layout preview={preview}>
       <Container>
-        <Header />
+        <BlogHeader />
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
         ) : (
