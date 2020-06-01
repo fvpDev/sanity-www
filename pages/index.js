@@ -15,10 +15,6 @@ export default function Index({ allPosts, preview }) {
       <Layout preview={preview}>
         <Head>
           <title>Next.js Blog Example with {CMS_NAME} and gFonts</title>
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
-          // <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-          // <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
         </Head>
         <Container>
           <Intro />

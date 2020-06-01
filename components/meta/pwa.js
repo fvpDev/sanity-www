@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-export default function PWAMeta() {
+export default function PWAHead() {
   return (
     <Head>
       // Android
