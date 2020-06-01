@@ -1,11 +1,12 @@
 module.exports = {
   theme: {
     screens: {
-      'xs': {'max': '600px'},
-      'sm': {'min': '600px', 'max': '900px'},
-      'md': {'min': '900px', 'max': '1200px'},
-      'lg': {'min': '1200px', 'max': '1800px'},
-      'xl': {'min': '1800px'},
+      'xs': '320px',
+      'sm': '600px',
+      'md': '900px',
+      'lg': '1200px',
+      'xl': '1800px',
+      'wide': '1920px'
     },
     extend: {
       colors: {
@@ -17,6 +18,8 @@ module.exports = {
       },
       spacing: {
         28: '7rem',
+        70: '17.5rem',
+        72: '18rem'
       },
       letterSpacing: {
         tighter: '-.04em',
@@ -39,7 +42,7 @@ module.exports = {
   variants: {},
   plugins: [],
   purge: {
-    enabled: true,
+    enabled: (process.env.NODE_ENV === 'production' ? true : false),
     content: [
       './pages/**/*.{js,jsx,ts,tsx,mdx}',
       './components/**/*.{js,jsx,ts,tsx,mdx}',

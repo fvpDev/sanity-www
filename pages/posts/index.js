@@ -14,10 +14,10 @@ export default function Index({ allPosts, preview }) {
   const morePosts = allPosts.slice(1)
   return (
     <>
+      <Head>
+        <title>Next.js Blog Example with {CMS_NAME} and gFonts</title>
+      </Head>
       <Layout preview={preview}>
-        <Head>
-          <title>Next.js Blog Example with {CMS_NAME} and gFonts</title>
-        </Head>
         <Container>
           <BlogIntro />
           {heroPost && (

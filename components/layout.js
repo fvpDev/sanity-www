@@ -21,7 +21,7 @@ export default class Layout extends React.Component {
 
         <Alert preview={preview} />
         <Header />
-        <main>{children}</main>
+        {children}
         <Footer />
       </>
     )
