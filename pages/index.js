@@ -3,8 +3,8 @@ import Head from 'next/head'
 import Layout from '../components/layout'
 import Container from '../components/_layout/container'
 import Intro from '../components/pages/home/intro'
+import Posts from '../components/pages/posts/posts'
 import HeroPost from '../components/pages/posts/hero-post'
-import MoreStories from '../components/pages/posts/more-stories'
 
 import { CMS_NAME } from '../lib/constants'
 import { getAllPostsForHome } from '../lib/api'
@@ -30,7 +30,7 @@ export default function Index({ allPosts, preview }) {
               excerpt={heroPost.excerpt}
             />
           )}
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+          {morePosts.length > 0 && <Posts posts={morePosts} all={false} />}
         </Container>
       </Layout>
     </>

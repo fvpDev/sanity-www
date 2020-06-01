@@ -6,7 +6,7 @@ import Layout from '../../components/layout'
 import Header from '../../components/_layout/header'
 import Container from '../../components/_layout/container'
 import Separator from '../../components/_layout/separator'
-import MoreStories from '../../components/pages/posts/more-stories'
+import Posts from '../../components/pages/posts/posts'
 import PostTitle from '../../components/pages/posts/_post/post-title'
 import PostBody from '../../components/pages/posts/[post]/post-body'
 import PostHeader from '../../components/pages/posts/[post]/post-header'
@@ -41,7 +41,7 @@ export default function Post({ post, morePosts, preview }) {
               <PostBody content={post.content} />
             </article>
             <Separator />
-            {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+            {morePosts.length > 0 && <Posts posts={morePosts} all={false} />}
           </>
         )}
       </Container>
