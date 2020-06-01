@@ -1,21 +1,25 @@
 import cn from 'classnames'
 import Link from 'next/link'
-import { imageBuilder } from '../lib/api'
+import { Img } from 'react-progressive-loader'
 
-export default function CoverImage({ title, url, slug }) {
+import { imageBuilder } from '../../../../lib/api'
+
+export default function PreviewImage({ title, url, slug }) {
   const image = (
-    <img
-      width={1240}
-      height={620}
+    <Img
+      width={556}
+      height={278}
       alt={`Cover Image for ${title}`}
       className={cn('shadow-small', {
         'hover:shadow-medium transition-shadow duration-200': slug,
       })}
+      bgColor='#CCCCCC'
       src={imageBuilder
         .image(url)
-        .width(1240)
-        .height(620)
-        .url()}
+        .width(556)
+        .height(278)
+        .url()
+      }
     />
   )
 

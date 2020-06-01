@@ -1,11 +1,13 @@
-import Container from '../components/container'
-import MoreStories from '../components/more-stories'
-import HeroPost from '../components/hero-post'
-import Intro from '../components/intro'
-import Layout from '../components/layout'
-import { getAllPostsForHome } from '../lib/api'
 import Head from 'next/head'
+
+import Layout from '../components/layout'
+import Container from '../components/_layout/container'
+import Intro from '../components/pages/home/intro'
+import HeroPost from '../components/pages/posts/hero-post'
+import MoreStories from '../components/pages/posts/more-stories'
+
 import { CMS_NAME } from '../lib/constants'
+import { getAllPostsForHome } from '../lib/api'
 
 export default function Index({ allPosts, preview }) {
   const heroPost = allPosts[0]

@@ -1,13 +1,15 @@
 import React from 'react'
-import Fonts from '../load/fonts'
-import Alert from '../components/alert'
-import Footer from '../components/footer'
-import SEOHead from '../components/meta/seo'
-import PWAHead from '../components/meta/pwa'
-import FontsHead from '../components/meta/fonts'
+
+import Alert from './_layout/alert'
+import Footer from './_layout/footer'
+import SEOHead from './_layout/meta/seo'
+import PWAHead from './_layout/meta/pwa'
+import FontsHead from './_layout/meta/fonts'
+
+import FontsLinks from '../lib/load-fonts'
 
 export default class Layout extends React.Component {
-  componentDidMount() { Fonts() }
+  componentDidMount() { FontsLinks() }
   render() {
     const { preview, children } = this.props;
     return (
