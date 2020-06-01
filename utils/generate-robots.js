@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 (async () => {
-  const hostname = 'https://www.thundariuscreative.com/'
+  const hostname = 'https://sanity-www.now.sh/'
   const robots = `User-agent: *
 Sitemap: ${hostname}sitemap.xml
 `;

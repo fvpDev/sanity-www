@@ -20,7 +20,7 @@ module.exports = withPWA({
       require('./utils/generate-sitemap')
       require('./utils/generate-robots')
       // require('./utils/generate-rss')
-      console.log(config)
+      // console.log(config)
     }
     return config
   }

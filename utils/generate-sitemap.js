@@ -5,7 +5,7 @@ const globby = require('globby');
 const prettier = require('prettier');
 
 (async () => {
-  const hostname = 'https://www.thundariuscreative.com/'
+  const hostname = 'https://sanity-www.now.sh/'
   const prettierConfig = await prettier.resolveConfig('./.prettierrc.js');
 
   const pages = await globby([
