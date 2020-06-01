@@ -1,5 +1,12 @@
 module.exports = {
   theme: {
+    screens: {
+      'xs': {'max': '600px'},
+      'sm': {'min': '600px', 'max': '900px'},
+      'md': {'min': '900px', 'max': '1200px'},
+      'lg': {'min': '1200px', 'max': '1800px'},
+      'xl': {'min': '1800px'},
+    },
     extend: {
       colors: {
         'accent-1': '#FAFAFA',
