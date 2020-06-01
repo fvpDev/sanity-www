@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Alert from './_layout/alert'
+import Header from './_layout/header'
 import Footer from './_layout/footer'
 import SEOHead from './_layout/meta/seo'
 import PWAHead from './_layout/meta/pwa'
@@ -17,10 +18,10 @@ export default class Layout extends React.Component {
         <FontsHead />
         <SEOHead />
         <PWAHead />
-        <div className="min-h-screen">
-          <Alert preview={preview} />
-          <main>{children}</main>
-        </div>
+
+        <Alert preview={preview} />
+        <Header />
+        <main>{children}</main>
         <Footer />
       </>
     )
