@@ -12,6 +12,7 @@
     "@sanity/image-url": "0.140.17",
     "classnames": "2.2.6",
     "date-fns": "2.10.0",
+    "flowtype": "^2.0.0",
     "fontfaceobserver": "^2.1.0",
     "micro-form": "^2.0.5",
     "microstate": "^0.4.2",
