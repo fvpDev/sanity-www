@@ -6,8 +6,9 @@ module.exports = withPWA({
   optimizeImages: false,
   optimizeImagesInDev: false,
   env: {
-    NEXT_EXAMPLE_CMS_SANITY_PROJECT_ID:
-      process.env.NEXT_EXAMPLE_CMS_SANITY_PROJECT_ID,
+    NEXT_EXAMPLE_CMS_SANITY_PROJECT_ID: process.env.NEXT_EXAMPLE_CMS_SANITY_PROJECT_ID,
+    ETHEREAL_FAKE_EMAIL_USER: process.env.ETHEREAL_FAKE_EMAIL_USER,
+    ETHEREAL_FAKE_EMAIL_PASS: process.env.ETHEREAL_FAKE_EMAIL_PASS,
   },
   pwa: {
     disable: false,
