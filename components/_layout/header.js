@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 import Alert from './alert'
 
-export default function Header() {
+export default function Header({ preview }) {
   return (
     <header>
       <Alert preview={preview} />
