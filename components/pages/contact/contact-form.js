@@ -1,5 +1,6 @@
+// import 'isomorphic-fetch'
 import React from 'react'
-import 'isomorphic-fetch'
+// import { Form } from './form/parts'
 
 export default class ContactForm extends React.Component {
   constructor(props) {
@@ -9,7 +10,7 @@ export default class ContactForm extends React.Component {
       submitted: false
     }
   }
-  submitForm(data) => {
+  submitForm(data) {
     fetch('/api/contact', {
       method: 'post',
       headers: {
@@ -24,7 +25,7 @@ export default class ContactForm extends React.Component {
   render() {
     const title = 'Contact Page'
     return (
-      <Form>
+      <>
         {({ validateForm, getPayload }) => {
           return (
             <form className="board-form" onSubmit={e => {
@@ -54,7 +55,7 @@ export default class ContactForm extends React.Component {
             </form>
           )
         }}
-      </Form>
+      </>
     )
   }
 }

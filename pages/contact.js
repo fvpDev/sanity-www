@@ -1,8 +1,8 @@
 import Head from 'next/head'
 
 import Layout from '../components/layout'
-import Container from '../components/container' // extra
-import ContactForm from '../components/contact-form'
+import Container from '../components/_layout/container' // extra
+import ContactForm from '../components/pages/contact/contact-form'
 
 export default function Contact({ preview }) {
   return (
