@@ -8,12 +8,10 @@
 # testing
 /coverage
 
-# next.js
+# production
 /.next
 /.vercel
-/out/
-
-# production
+/out
 /build
 
 # misc
