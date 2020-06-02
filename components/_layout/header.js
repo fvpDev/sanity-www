@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import Alert from './_layout/alert'
+import Alert from './alert'
 
 export default function Header() {
   return (
