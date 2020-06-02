@@ -15,6 +15,6 @@ export default function Header() {
           <a className="flex-1 text-center hover:underline">Blog</a>
         </Link>
       </nav>
-    <header/>
+    </header>
   )
 }
