@@ -8,9 +8,7 @@
   },
   "build": {
     "env": {
-      "NEXT_EXAMPLE_CMS_SANITY_PROJECT_ID": "@next_example_cms_sanity_project_id",
-      "ETHEREAL_FAKE_EMAIL_USER": "@ethereal_fake_email_user",
-      "ETHEREAL_FAKE_EMAIL_PASS": "@ethereal_fake_email_pass"
+      "NEXT_EXAMPLE_CMS_SANITY_PROJECT_ID": "@next_example_cms_sanity_project_id"
     }
   },
   "routes": [
