@@ -3,12 +3,8 @@
     "NEXT_EXAMPLE_CMS_SANITY_PREVIEW_SECRET": "@next_example_cms_sanity_preview_secret",
     "NEXT_EXAMPLE_CMS_SANITY_API_TOKEN": "@next_example_cms_sanity_api_token",
     "NEXT_EXAMPLE_CMS_SANITY_PROJECT_ID": "@next_example_cms_sanity_project_id",
-    "SENDGRID_EMAIL_USER": "@sendgrid_email_user",
-    "SENDGRID_EMAIL_PASS": "@sendgrid_email_pass",
     "ETHEREAL_FAKE_EMAIL_USER": "@ethereal_fake_email_user",
-    "ETHEREAL_FAKE_EMAIL_PASS": "@ethereal_fake_email_pass",
-    "NODEMAILER_APP_EMAIL_USER": "@nodemailer_app_email_user",
-    "NODEMAILER_APP_EMAIL_PASS": "@nodemailer_app_email_pass"
+    "ETHEREAL_FAKE_EMAIL_PASS": "@ethereal_fake_email_pass"
   },
   "build": {
     "env": {
