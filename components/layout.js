@@ -1,6 +1,5 @@
 import React from 'react'
 
-import Alert from './_layout/alert'
 import Header from './_layout/header'
 import Footer from './_layout/footer'
 import SEOHead from './_layout/meta/seo'
@@ -19,8 +18,7 @@ export default class Layout extends React.Component {
         <SEOHead />
         <PWAHead />
 
-        <Alert preview={preview} />
-        <Header />
+        <Header preview={preview} />
         {children}
         <Footer />
       </>
