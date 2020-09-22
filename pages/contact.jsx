@@ -1,8 +1,8 @@
 import Head from 'next/head'
 
-import Layout from '../components/layout'
-import Container from '../components/_layout/container' // extra
-import ContactForm from '../components/pages/contact/contact-form'
+import Layout from '../components/_layout'
+import Main from '../components/_layout/02_main' // extra
+import ContactForm from '../components/pages/contact/form'
 
 export default function Contact({ preview }) {
   return (
@@ -11,9 +11,9 @@ export default function Contact({ preview }) {
         <title>Contact sanity-www</title>
       </Head>
       <Layout preview={preview}>
-        <Container>
+        <Main>
           <ContactForm />
-        </Container>
+        </Main>
       </Layout>
     </>
   )
