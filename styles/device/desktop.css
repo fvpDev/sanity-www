@@ -1,0 +1,3 @@
+@screen desktop { /* { min: 1201px, max: 1800px } */
+  html { font-size: calc((10 / 1800)*(100vw - 17px)) }
+}

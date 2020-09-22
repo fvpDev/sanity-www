@@ -1,0 +1,3 @@
+@screen desktop-wide { /* { min: 1921px } */
+  html { font-size: calc((10 / 1920)*(100vw - 17px)) }
+}
