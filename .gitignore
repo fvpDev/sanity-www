@@ -9,6 +9,7 @@ node_modules
 coverage
 
 # production
+.now
 .next
 .vercel
 out
@@ -29,7 +30,6 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 
-.now
 package-lock.json
 public/sw.js*
 public/workbox*.js*

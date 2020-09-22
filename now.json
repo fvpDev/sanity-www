@@ -1,23 +1,9 @@
 {
-  "env": {
-    "NEXT_EXAMPLE_CMS_SANITY_PREVIEW_SECRET": "@next_example_cms_sanity_preview_secret",
-    "NEXT_EXAMPLE_CMS_SANITY_API_TOKEN": "@next_example_cms_sanity_api_token",
-    "NEXT_EXAMPLE_CMS_SANITY_PROJECT_ID": "@next_example_cms_sanity_project_id",
-    "ETHEREAL_FAKE_EMAIL_USER": "@ethereal_fake_email_user",
-    "ETHEREAL_FAKE_EMAIL_PASS": "@ethereal_fake_email_pass"
-  },
-  "build": {
-    "env": {
-      "NEXT_EXAMPLE_CMS_SANITY_PROJECT_ID": "@next_example_cms_sanity_project_id",
-      "ETHEREAL_FAKE_EMAIL_USER": "@ethereal_fake_email_user",
-      "ETHEREAL_FAKE_EMAIL_PASS": "@ethereal_fake_email_pass"
-    }
-  },
   "routes": [
     {
       "src": "/.*",
       "headers": {
-        "Content-Security-Policy": "default-src 'self'; connect-src 'self' https://cdn.sanity.io https://fonts.googleapis.com https://fonts.gstatic.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://cdn.sanity.io; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; style-src-elem 'self' https://fonts.googleapis.com",
+        "Content-Security-Policy": "default-src 'self'; connect-src 'self' https://cdn.sanity.io https://fonts.googleapis.com https://fonts.gstatic.com; font-src 'self' https://fonts.gstatic.com; frame-src 'self' https://www.google.com; img-src 'self' https://cdn.sanity.io; script-src 'self' 'unsafe-eval'; script-src-elem 'self' https://www.google.com https://www.gstatic.com; style-src 'self' 'unsafe-inline'; style-src-elem 'self' 'unsafe-inline' https://fonts.googleapis.com",
         "Feature-Policy": "'none'",
         "Referrer-Policy": "same-origin",
         "X-Content-Type-Options": "nosniff",
