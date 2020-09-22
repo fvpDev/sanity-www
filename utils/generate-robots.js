@@ -1,10 +1,11 @@
 const fs = require('fs');
 
 (async () => {
-  const hostname = 'https://sanity-www.now.sh/'
-  const robots = `User-agent: *
-Sitemap: ${hostname}sitemap.xml
-`;
+  const base_url = ''
+  const robots =
+`User-agent: *
+Sitemap: ${base_url}/sitemap.xml
+`
 
-  fs.writeFileSync('public/robots.txt', robots);
-})();
+  fs.writeFileSync('public/robots.txt', robots)
+})()

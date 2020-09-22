@@ -5,9 +5,8 @@ const globby = require('globby');
 const prettier = require('prettier');
 
 (async () => {
-  const hostname = 'https://sanity-www.now.sh/'
+  const base_url = '';
   const prettierConfig = await prettier.resolveConfig('./.prettierrc.js');
-
   const pages = await globby([
     'pages/**/*{.js, .jsx, .ts, .tsx}',
     '!pages/_*{.js, .jsx, .ts, .tsx}', // ignore Next.js specific files (e.g., _app.js)
@@ -31,7 +30,7 @@ const prettier = require('prettier');
 
           return `
             <url>
-              <loc>${hostname + route}</loc>
+              <loc>${base_url}/${route}</loc>
               <lastmod>${lastModified}</lastmod>
               <changefreq>monthly</changefreq>
               <priority>1.00</priority>
