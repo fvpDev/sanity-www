@@ -28,10 +28,17 @@ export default function HeroPost({
           </div>
         </div>
         <div>
-          <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
+          <p className="styled-jsx-test text-lg leading-relaxed mb-4">{excerpt}</p>
           <PostAvatar name={author.name} picture={author.picture} />
         </div>
       </div>
+      <style jsx>
+        {`
+          .styled-jsx-test {
+              @apply bg-red;
+           }
+        `}
+      </style>
     </section>
   )
 }

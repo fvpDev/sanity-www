@@ -2,7 +2,7 @@ import cn from 'classnames'
 import Link from 'next/link'
 import { Img } from 'react-progressive-loader'
 
-import { imageBuilder } from '../../../../lib/api'
+import imageBuilder from '../../../../lib/cms/imageBuilder'
 
 export default function PreviewImage({ title, url, slug }) {
   const image = (

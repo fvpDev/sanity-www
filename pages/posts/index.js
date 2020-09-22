@@ -1,13 +1,13 @@
 import Head from 'next/head'
 
 import Layout from '../../components/layout'
-import Container from '../../components/_layout/container'
+import Main from '../../components/_layout/02_main'
 import Posts from '../../components/pages/posts/posts'
 import HeroPost from '../../components/pages/posts/hero-post'
 import BlogIntro from '../../components/pages/posts/blog-intro'
 
 import { CMS_NAME } from '../../lib/constants'
-import { getAllPostsForHome } from '../../lib/api'
+import { getAllPostsForHome } from '../../lib/api/preview-post'
 
 export default function Index({ allPosts, preview }) {
   const heroPost = allPosts[0]
@@ -18,20 +18,20 @@ export default function Index({ allPosts, preview }) {
         <title>Next.js Blog Example with {CMS_NAME} and gFonts</title>
       </Head>
       <Layout preview={preview}>
-        <Container>
+        <Main>
           <BlogIntro />
           {heroPost && (
             <HeroPost
-              title={heroPost.title}
-              coverImage={heroPost.coverImage}
               date={heroPost.date}
-              author={heroPost.author}
               slug={heroPost.slug}
+              title={heroPost.title}
+              author={heroPost.author}
               excerpt={heroPost.excerpt}
+              coverImage={heroPost.coverImage}
             />
           )}
           {morePosts.length > 0 && <Posts posts={morePosts} all={false} />}
-        </Container>
+        </Main>
       </Layout>
     </>
   )

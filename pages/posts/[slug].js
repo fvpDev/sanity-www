@@ -3,7 +3,7 @@ import ErrorPage from 'next/error'
 import { useRouter } from 'next/router'
 
 import Layout from '../../components/layout'
-import Container from '../../components/_layout/container'
+import Main from '../../components/_layout/02_main'
 import Separator from '../../components/_layout/separator'
 import Posts from '../../components/pages/posts/posts'
 import PostTitle from '../../components/pages/posts/_post/post-title'
@@ -12,7 +12,7 @@ import PostHeader from '../../components/pages/posts/[post]/post-header'
 import BlogHeader from '../../components/pages/posts/[post]/blog-header'
 
 import { CMS_NAME } from '../../lib/constants'
-import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api'
+import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api/preview-post'
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter()
@@ -21,7 +21,7 @@ export default function Post({ post, morePosts, preview }) {
   }
   return (
     <Layout preview={preview}>
-      <Container>
+      <Main>
         <BlogHeader />
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
@@ -32,19 +32,14 @@ export default function Post({ post, morePosts, preview }) {
                 <title>{post.title} | Next.js Blog Example with {CMS_NAME}</title>
                 {/* <meta property="og:image" content={post.ogImage.url} /> */}
               </Head>
-              <PostHeader
-                title={post.title}
-                coverImage={post.coverImage}
-                date={post.date}
-                author={post.author}
-              />
+              <PostHeader title={post.title} coverImage={post.coverImage} date={post.date} author={post.author} />
               <PostBody content={post.content} />
             </article>
             <Separator />
             {morePosts.length > 0 && <Posts posts={morePosts} all={false} />}
           </>
         )}
-      </Container>
+      </Main>
     </Layout>
   )
 }
