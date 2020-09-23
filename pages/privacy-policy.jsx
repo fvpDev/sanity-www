@@ -2,7 +2,7 @@ import cn from 'classnames'
 import Head from 'next/head'
 import Link from 'next/link'
 import Main from '../components/_layout/02_main'
-import { BRAND_NAME, BRAND_ENTITY_NAME } from '../lib/constants/brand'
+import { BRAND_ID, BRAND_NAME, BRAND_ENTITY_NAME } from '../lib/constants/brand'
 import { SITE_HOSTNAME, SITE_BASE_URL } from '../lib/constants/site'
 
 export default function PrivacyPolicy() {

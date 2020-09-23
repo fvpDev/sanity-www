@@ -1,12 +1,11 @@
 import Head from 'next/head'
 
-import Layout from '../../components/layout'
+import Layout from '../../components/_layout'
 import Main from '../../components/_layout/02_main'
 import Posts from '../../components/pages/posts/posts'
 import HeroPost from '../../components/pages/posts/hero-post'
 import BlogIntro from '../../components/pages/posts/blog-intro'
 
-import { CMS_NAME } from '../../lib/constants'
 import { getAllPostsForHome } from '../../lib/api/preview-post'
 
 export default function Index({ allPosts, preview }) {
@@ -15,7 +14,7 @@ export default function Index({ allPosts, preview }) {
   return (
     <>
       <Head>
-        <title>Next.js Blog Example with {CMS_NAME} and gFonts</title>
+        <title>Next.js Blog Example with Sanity.io and gFonts</title>
       </Head>
       <Layout preview={preview}>
         <Main>

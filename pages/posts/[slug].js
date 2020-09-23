@@ -2,7 +2,7 @@ import Head from 'next/head'
 import ErrorPage from 'next/error'
 import { useRouter } from 'next/router'
 
-import Layout from '../../components/layout'
+import Layout from '../../components/_layout'
 import Main from '../../components/_layout/02_main'
 import Separator from '../../components/_layout/separator'
 import Posts from '../../components/pages/posts/posts'
@@ -11,7 +11,6 @@ import PostBody from '../../components/pages/posts/[post]/post-body'
 import PostHeader from '../../components/pages/posts/[post]/post-header'
 import BlogHeader from '../../components/pages/posts/[post]/blog-header'
 
-import { CMS_NAME } from '../../lib/constants'
 import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api/preview-post'
 
 export default function Post({ post, morePosts, preview }) {
@@ -29,7 +28,7 @@ export default function Post({ post, morePosts, preview }) {
           <>
             <article>
               <Head>
-                <title>{post.title} | Next.js Blog Example with {CMS_NAME}</title>
+                <title>{post.title} | Next.js Blog Example with Sanity.io</title>
                 {/* <meta property="og:image" content={post.ogImage.url} /> */}
               </Head>
               <PostHeader title={post.title} coverImage={post.coverImage} date={post.date} author={post.author} />
